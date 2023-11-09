@@ -71,11 +71,16 @@ const renderActiveNote = () => {
     noteText.value = '';
   }
 };
+// random generator for id
+const idGen = () => {
+ return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+}
 
 const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
-    text: noteText.value
+    text: noteText.value,
+    id: idGen()
   };
   saveNote(newNote).then(() => {
     getAndRenderNotes();
