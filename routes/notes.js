@@ -2,10 +2,18 @@ const notes = require('express').Router();
 const path = require('path')
 const fs = require('fs')
 
-
 notes.post('/', (req, res) => {
-    console.log(req.body)
-    res.json('note')
+    fs.readFile('./db/db.json', 'utf8', (err, data) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        const current = JSON.parse(data);
+        current.push(req.body);
+        const updated = JSON.stringify(current, null, 2);
+        fs.writeFile('./db/db.json', updated, (err) => err && console.error(err));
+        res.json('Notes updated!');
+      });
 });
 
 notes.get('/', (req, res) => {
