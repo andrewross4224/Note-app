@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "title": "Take dog on walk",
+    "text": "she needs the workout",
+    "id": "736e"
+  },
+  {
+    "title": "Do the dishes",
+    "text": "everything is dirty",
+    "id": "ee93"
+  },
+  {
+    "title": "Call mom",
+    "text": "she gets lonely",
+    "id": "8d62"
+  },
+  {
+    "title": "Do Homework",
+    "text": "grading",
+    "id": "7d60"
+  },
+  {
+    "title": "Learn to code",
+    "text": "should be easy",
+    "id": "a186"
+  }
+]

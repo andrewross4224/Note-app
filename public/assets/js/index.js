@@ -83,6 +83,8 @@ const handleNoteSave = () => {
     id: idGen()
   };
   saveNote(newNote).then(() => {
+    noteTitle.value = ''
+    noteText.value = ''
     getAndRenderNotes();
     renderActiveNote();
   });
