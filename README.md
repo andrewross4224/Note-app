@@ -9,7 +9,7 @@
   - [Credits](#contributing)
   - [Questions](#questions)
   # Installation
-  To use this app go to the deployed ![website](https://note-app-4224-703ab7d8b819.herokuapp.com/)
+  To use this app go to the deployed [website](https://note-app-4224-703ab7d8b819.herokuapp.com/)
   # Usage
   This app should be used to keep track of important reminders and todos throughout your day. Save notes and delete when tasks are done.
   ![alt text](./screenshots/Screenshot%20(12).png)
